@@ -1,13 +1,23 @@
 - 인프런 : 모두를 위한 딥러닝 - 기본적인 머신러닝과 딥러닝 강좌 정리
 - 코드 : https //github.com/hunkim/deeplearningzerotoall
-- 1머신러닝의개념과용어 :
-- 2LinearRegression개념 :
-- 3LinearRegressionMinCost :
-- 4여러개FeatureLinearRegression :
-- 5Logistic_Classification :
-- 6SoftmaxRegression :
-- 7ML실용과 팁 :
-- 8딥러닝의기본과개념 :
-- 9XOR학습방법, Backpropagation :
-- 10ReLU :
+- 1머신러닝의개념과용어 
+:
+- 2LinearRegression개념 
+:
+- 3LinearRegressionMinCost 
+:
+- 4여러개FeatureLinearRegression 
+:
+- 5Logistic_Classification 
+:
+- 6SoftmaxRegression 
+:
+- 7ML실용과 팁 
+:
+- 8딥러닝의기본과개념 
+:
+- 9XOR학습방법, Backpropagation 
+:
+- 10ReLU 
+:
 - 11 :
