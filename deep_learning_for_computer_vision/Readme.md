@@ -18,4 +18,5 @@ II Image Data Preparation
   Keras Mnist 이미지(train, test) Normalize, Centering, Standardize 하기
   8. How to load large Datasets From Directories with Keras      
   Dataset Structure, train, test, validation 폴더 이미지들 batch로 읽어오기   
-  9. 
+  9. How to Use Image Data Augmentation in Keras   
+  
