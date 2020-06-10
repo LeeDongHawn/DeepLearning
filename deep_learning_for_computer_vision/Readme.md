@@ -16,4 +16,6 @@ II Image Data Preparation
   Keras를 사용해 단일 이미지 load   
   7. How to Scale Image Pixel Data with Keras    
   Keras Mnist 이미지(train, test) Normalize, Centering, Standardize 하기
-  8. How to load large Datasets From Directories with Keras   
+  8. How to load large Datasets From Directories with Keras      
+  Dataset Structure, train, test, validation 폴더 이미지들 batch로 읽어오기   
+  9. 
