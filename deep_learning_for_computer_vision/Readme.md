@@ -24,6 +24,6 @@ II Image Data Preparation
 III Convolutions and Pooling    
 
   10. How to Use Different Color Channel Ordering Formats   
-  
+  채널 맨 앞으로, 맨 뒤로 설정하기(Keras, PIL)   
   11. 
   
