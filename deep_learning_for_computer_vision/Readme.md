@@ -19,4 +19,6 @@ II Image Data Preparation
   8. How to load large Datasets From Directories with Keras      
   Dataset Structure, train, test, validation 폴더 이미지들 batch로 읽어오기   
   9. How to Use Image Data Augmentation in Keras   
+  이미지 수평,수직 방향 shift, rotation, flip, brightness, zoom   
+  10. 
   
