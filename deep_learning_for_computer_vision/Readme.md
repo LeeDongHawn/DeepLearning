@@ -20,5 +20,10 @@ II Image Data Preparation
   Dataset Structure, train, test, validation 폴더 이미지들 batch로 읽어오기   
   9. How to Use Image Data Augmentation in Keras   
   이미지 수평,수직 방향 shift, rotation, flip, brightness, zoom   
-  10. 
+  
+III Convolutions and Pooling    
+
+  10. How to Use Different Color Channel Ordering Formats   
+  
+  11. 
   
