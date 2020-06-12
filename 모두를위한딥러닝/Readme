@@ -30,4 +30,8 @@
 - 10ReLU 
   : ReLU, Drop Out, Ensemble, MNIST 딥러닝(1.layer설정, 2.epoch,batch,hypothesis,cost 등 설정, 3.학습, 4.예측및결과출력)
   
-- 11 :
+- 11CNN
+  : CNN, MNIST(CNN_class,_layers,_ensemble)
+
+- 12RNN
+  : RNN, 
