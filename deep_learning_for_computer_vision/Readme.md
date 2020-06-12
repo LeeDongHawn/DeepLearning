@@ -25,7 +25,7 @@ III Convolutions and Pooling
 
   10. How to Use Different Color Channel Ordering Formats   
   채널 맨 앞으로, 맨 뒤로 설정하기(Keras, PIL)   
-  11. How Convolutional Layer Work
+  11. How Convolutional Layer Work   
   CNN - model, layer, weight 생성, 학습, 예측 (2D conv layer는 입력 4D(samples,rows,cols,channels))   
   12. How to Use Filter Size, Padding, and Stride    
   CNN - 
