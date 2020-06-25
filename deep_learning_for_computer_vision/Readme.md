@@ -28,5 +28,6 @@ III Convolutions and Pooling
   11. How Convolutional Layer Work   
   CNN - model, layer, weight 생성, 학습, 예측 (2D conv layer는 입력 4D(samples,rows,cols,channels))   
   12. How to Use Filter Size, Padding, and Stride    
+  CNN - Filter Size, Padding   
+  13. How Pooling Layers Work   
   CNN - 
-  
