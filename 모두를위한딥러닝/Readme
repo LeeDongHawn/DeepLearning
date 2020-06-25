@@ -1,5 +1,6 @@
 - 인프런 : 모두를 위한 딥러닝 - 기본적인 머신러닝과 딥러닝 강좌 정리
 - 코드 : https //github.com/hunkim/deeplearningzerotoall
+- Tensorflow : 1.14.0, Python : 3.7.4 
 - 1머신러닝의개념과용어 
   : 머신러닝 개념, Tensorflow 기본(placeholder)
   
