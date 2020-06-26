@@ -1,5 +1,5 @@
 deep_learning_for_computer_vision / Machine Learning Mastery  
-텐서플로 1.14 keras 2.3.1 파이썬 3.7.4
+텐서플로 1.14 keras 2.3.1 파이썬 3.7.4   
 I Foundations 
 
   1. Introduction to Computer Vision    
