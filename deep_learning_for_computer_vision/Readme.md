@@ -30,4 +30,8 @@ III Convolutions and Pooling
   12. How to Use Filter Size, Padding, and Stride    
   CNN - Filter Size, Padding   
   13. How Pooling Layers Work   
-  CNN - 
+  CNN - Average, Max, Global Pooling   
+   
+IV Convolutional Neural Networks   
+   
+   14. ImageNet, ILSVRC, and Milestone Architectures   
