@@ -37,7 +37,7 @@ IV Convolutional Neural Networks
    14. ImageNet, ILSVRC, and Milestone Architectures   
    ImageNet dataset, ILSVRC 소개   
    15. How Milestone Model Architectural Innovations Work      
-   
+   LeNet-5, AlexNet, VGG, Inception(GoogLeNet), ResNet 설명   
    16. How to Use 1x1 Convolutions to Manage Model Complexity      
    
    17. How To Implement Model Architecture Innovations   
