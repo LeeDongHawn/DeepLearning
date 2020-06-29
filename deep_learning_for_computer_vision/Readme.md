@@ -36,5 +36,10 @@ IV Convolutional Neural Networks
    
    14. ImageNet, ILSVRC, and Milestone Architectures   
    ImageNet dataset, ILSVRC 소개   
-   15. How Milestone Model Architectural Innovations Work   
+   15. How Milestone Model Architectural Innovations Work      
    
+   16. How to Use 1x1 Convolutions to Manage Model Complexity      
+   
+   17. How To Implement Model Architecture Innovations   
+   
+   18. How to Use Pre-Trained Models and Transfer Learning   
