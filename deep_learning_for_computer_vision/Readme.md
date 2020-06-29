@@ -35,3 +35,6 @@ III Convolutions and Pooling
 IV Convolutional Neural Networks   
    
    14. ImageNet, ILSVRC, and Milestone Architectures   
+   ImageNet dataset, ILSVRC 소개   
+   15. How Milestone Model Architectural Innovations Work   
+   
