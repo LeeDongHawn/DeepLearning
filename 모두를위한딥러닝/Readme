@@ -35,4 +35,4 @@
   : CNN, MNIST(CNN_class,_layers,_ensemble)
 
 - 12RNN
-  : RNN, 
+  : RNN 기초
