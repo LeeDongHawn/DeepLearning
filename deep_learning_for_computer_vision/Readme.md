@@ -43,3 +43,25 @@ IV Convolutional Neural Networks
    17. How To Implement Model Architecture Innovations   
    
    18. How to Use Pre-Trained Models and Transfer Learning   
+   
+V Image Classification   
+   
+  19. How to Classify Black and White Photos of Clothing   
+  20. How to Classify Small Photos of Objects   
+  21. How to Classify Photographs of Dogs and Cats   
+  22. How to Label Satellite Photographs of the Amazon Rainforest   
+   
+VI Object Detection   
+   
+  23. Deep Learning for Object Recognition   
+  24. How to Perform Object Detection With YOLOv3   
+  25. How to Perform Object Detection With Mask R-CNN   
+  26. How to Develop a New Object Detection Model   
+  
+VII Face Recognition   
+   
+  27. Deep Learning for Face Recognition   
+  28. How to Detect Faces in Photographs   
+  29. How to Perform Face Identification and Verification with VGGFace2   
+  30. How to Perform Face Classification with FaceNet   
+  
