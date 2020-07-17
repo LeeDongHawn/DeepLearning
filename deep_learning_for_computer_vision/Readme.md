@@ -41,7 +41,7 @@ IV Convolutional Neural Networks
    16. How to Use 1x1 Convolutions to Manage Model Complexity      
    1x1 convolution layer   
    17. How To Implement Model Architecture Innovations   
-   
+   VGG, Inception, Residual Network 코드로 불러오기(구조 그림)      
    18. How to Use Pre-Trained Models and Transfer Learning   
    
 V Image Classification   
