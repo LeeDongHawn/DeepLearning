@@ -39,7 +39,7 @@ IV Convolutional Neural Networks
    15. How Milestone Model Architectural Innovations Work      
    LeNet-5, AlexNet, VGG, Inception(GoogLeNet), ResNet 설명   
    16. How to Use 1x1 Convolutions to Manage Model Complexity      
-   
+   1x1 convolution layer   
    17. How To Implement Model Architecture Innovations   
    
    18. How to Use Pre-Trained Models and Transfer Learning   
