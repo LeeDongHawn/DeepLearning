@@ -1,8 +1,6 @@
 [UST - 파이썬딥러닝] 김남신 교수님 강의를 듣고 정리함
-- Tensorflow : 1.14.0, Python : 3.7.4 
-- 2LinearRegression개념 
-  : Linear Regression(가설과 cost(loss) function)
-  
+- Tensorflow : 2.3.0, Python : 3.7.9, Keras : 2.4.3 
+- 1LinearRegression 
 - 3LinearRegressionMinCost 
   : Gradient descent algorithm
   
