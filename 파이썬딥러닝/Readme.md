@@ -1,32 +1,12 @@
 [UST - 파이썬딥러닝] 김남신 교수님 강의를 듣고 정리함
 - Tensorflow : 2.3.0, Python : 3.7.9, Keras : 2.4.3 
-- 1LinearRegression 
-- 3LinearRegressionMinCost 
-  : Gradient descent algorithm
-  
-- 4여러개FeatureLinearRegression 
-  : Multi-variable LinearRegression(가설,cost(loss) function, optimizer(gradient), train, prediction)
-  
-- 5Logistic_Classification 
-  : (binary)classification, 가설(시그모이드사용), cost(loss) function, optimizer(gradient), train, prediction
-  
-- 6SoftmaxRegression 
-  : Multinomial Logistic Classification(=Softmax Classification,가설), Fancy Softmax(one-hot encoder)
-  
-- 7ML실용과 팁 
-  : 고려할점(running_rate, preprocessing data(normalize), overfitting), Training, Test 데이터 나누기, epoch, batch, 성능평가
-  
-- 8딥러닝의기본과개념 
-  : 딥러닝 개념, numpy  
-  
-- 9XOR학습방법, Backpropagation 
-  : XOR문제 해결(Deep Network), 텐서보드
-  
-- 10ReLU 
-  : ReLU, Drop Out, Ensemble, MNIST 딥러닝(1.layer설정, 2.epoch,batch,hypothesis,cost 등 설정, 3.학습, 4.예측및결과출력)
-  
-- 11CNN
-  : CNN, MNIST(CNN_class,_layers,_ensemble)
-
-- 12RNN
-  : RNN 기초
+- 1LinearRegression   
+: x 1개로 y 예측   
+- 2Multi-LinearRegression   
+: x 여러개로 y 예측   
+- 3Logistic Regression(binary)     
+: 실 생활에서는 모든 문제의 결과를 선형(Linear)으로 표현 불가   
+: Sigmoid, ReLU 등의 activation function 사용   
+- 4Logistic Regression(multi-class)    
+: 여러 개의 결과 중 1개를 선택하는 문제   
+: softmax와 one-hot encoding을 통해 분류   
