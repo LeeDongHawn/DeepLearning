@@ -55,4 +55,10 @@
 - 32 or 64 등 적절히 선택   
 11) Epoch   
 - 적절히 선택(작동 시간 고려)   
-* Batch와 Epoch 간의 관계 - 정확도에 영향을 미침
+12) Batch와 Epoch와 Iteration
+- Epoch : 인공 신경망에서 전체 데이터셋에 대해 forward/backward 학습을 완료한 횟수   
+- Batch : 메모리 한계와 속도 저하 때문에 모든 데이터를 한번에 집어넣을 수 없어, 데이터를 나누는 것(데이터 size)   
+- Iteration : 몇 번 나누는지에 대한 횟수
+ex) 2000개 Train data에 대해 epochs = 20, batch_size = 500인 경우   
+1epoch은 (2000/500) 4회 Iteration으로 학습이 진행된다.   
+20epoch결과 전체 20번의 학습이 이루어지며, (2000/500)*20 80회 Iteration으로 학습이 진행된다. 
