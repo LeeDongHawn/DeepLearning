@@ -63,4 +63,4 @@
 >>> 1epoch은 (2000/500) 4회 Iteration으로 학습이 진행된다.   
 >>> 20epoch결과 전체 20번의 학습이 이루어지며, (2000/500)*20 80회 Iteration으로 학습이 진행된다.     
     
-- 6MNIST - MNIST 숫자 분류하기   
+- 6MNIST - MNIST 숫자 분류하기, Fashion_MNIST 분류하기(시각화 기법 추가)      
