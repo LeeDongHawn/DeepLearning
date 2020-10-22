@@ -61,4 +61,6 @@
 - Iteration : 몇 번 나누는지에 대한 횟수
 ex) 2000개 Train data에 대해 epochs = 20, batch_size = 500인 경우   
 1epoch은 (2000/500) 4회 Iteration으로 학습이 진행된다.   
-20epoch결과 전체 20번의 학습이 이루어지며, (2000/500)*20 80회 Iteration으로 학습이 진행된다. 
+20epoch결과 전체 20번의 학습이 이루어지며, (2000/500)*20 80회 Iteration으로 학습이 진행된다.     
+    
+- 6MNIST - MNIST 숫자 분류하기   
