@@ -14,15 +14,15 @@
 - 5중간고사 - 딥 러닝 모델 구축하기(binary classification)   
 > [딥러닝 고려사항]   
 >> 1) Preprocessing data - sklearn   
-- 표준화(standardization)는 데이터를 0을 중심으로 양쪽으로 분포시킴
-- 정규화(normalization)는 데이터를 특정 구간으로 나눔
-- StandardSclar : 데이터를 평균이 0, 분산이 1인 값으로 변환
-- MinMaxSclar : 데이터값을 0과 1사이의 범위 값으로 변환(음수는 -1~1)
-- RobustScaler : StandardSclar와 빗스하지만 평균과 분산대신 median과 quartile을 사용(이상치 영향 줄임)   
+>>> - 표준화(standardization)는 데이터를 0을 중심으로 양쪽으로 분포시킴
+>>> - 정규화(normalization)는 데이터를 특정 구간으로 나눔
+>>> - StandardSclar : 데이터를 평균이 0, 분산이 1인 값으로 변환
+>>> - MinMaxSclar : 데이터값을 0과 1사이의 범위 값으로 변환(음수는 -1~1)
+>>> - RobustScaler : StandardSclar와 빗스하지만 평균과 분산대신 median과 quartile을 사용(이상치 영향 줄임)   
 >> 2) Initializers
-- 설정하지 않으면 random으로 가중치 초기화됨   
-- Xavior 초기화 방법, He 초기화 방법이 있음   
-- He 초기화 방법은 Xavior 초기화 방법 약간 개선 v   
+>>> - 설정하지 않으면 random으로 가중치 초기화됨   
+>>> - Xavior 초기화 방법, He 초기화 방법이 있음   
+>>> - He 초기화 방법은 Xavior 초기화 방법 약간 개선 v   
 3) Regularizier   
 - L1규제는 가중치의 절대값에 비례하는 weight 추가   
 - L2규제는 가중치의 제곱에 비례하는 weight 추가   
