@@ -64,11 +64,12 @@
 >>> 20epoch결과 전체 20번의 학습이 이루어지며, (2000/500)*20 80회 Iteration으로 학습이 진행된다.     
     
 - 6MNIST - MNIST 숫자 분류하기, Fashion_MNIST 분류하기(시각화 기법 추가)         
-> fit() : 모델 훈련(x_train,y_train), predict() : 입력에 대한 출력값(x_test), evaluate() : 테스트 데이터를 통해 정확도 평가    
+> fit() : 모델 훈련(x_train,y_train), predict() : 입력에 대한 출력값(x_test), evaluate(x_test,y_test) : 테스트 데이터를 통해 정확도 평가    
+>> 1) MNIST_1~5 : Using DNN(Not CNN) 
+
 ```
 CNN Model   
 1) 구조   
 - ㅇ
 ```
->> 1) MNIST_1~5 : Using DNN(Not CNN) 
 
