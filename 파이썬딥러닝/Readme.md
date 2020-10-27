@@ -12,7 +12,7 @@
 : 여러 개의 결과 중 1개를 선택하는 문제   
 : softmax와 one-hot encoding을 통해 분류   
 - 5중간고사 - 딥 러닝 모델 구축하기(binary classification)   
-> [딥러닝 고려사항]   
+> [딥러닝 Deep Neural Network 고려사항]   
 >> 1) Preprocessing data - sklearn   
 >>> - 표준화(standardization)는 데이터를 0을 중심으로 양쪽으로 분포시킴
 >>> - 정규화(normalization)는 데이터를 특정 구간으로 나눔
