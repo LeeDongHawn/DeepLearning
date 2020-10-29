@@ -68,7 +68,7 @@
 >> 1) MNIST_1~5 : Using DNN(Not CNN) 
 >>> 1 : Only 1 layer, 2 : More than 2 layer, 3 : Initializer 설정, 4 : Deep and Wide, 5 : Dropout   
 >> 2) MNIST_6 : Using CNN   
->>> 1 :   
+>> 3) MNIST_LeNet : Using LeNet   
 ```
 CNN Model   
 1) 구조   
@@ -97,6 +97,9 @@ CNN Model
 - Fully Connected layer    
 용도 : 추출된 특징 값을 Neural Network에 넣어서 최종 분류까지 수행   
 : ReLu + Drop out + Softmax 등으로 구성   
+   
+3) 유명한 CNN   
+- LeNet-5(1998), AlexNet(2012), ZFNet(2013), VGG(2014), GoogLeNet(=Inception, 2014), ResNet(2015)      
 ```
 
 
