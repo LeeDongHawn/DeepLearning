@@ -77,9 +77,11 @@ CNN Model
 - (1 2), (1 2) 여러 번 반복 수행 가능   
 (Flatten)    
 - 3[FC + ReLu] * K(0<=K<=2)   
-(마지막 : Softmax)   
+(마지막 : Softmax) 
+   
 2) layer  
-- Conv2D   
+- Conv2D  
+용도 : 이미지에서 특징을 추출(Activation Map)하기 위함   
 : input_shape = (height, width, channel), activation = 'None', kernel_initializer="glorot_uniform", data_format=None(input_shape 순서 설정)      
 : filters = 개수, 입력 데이터를 지정된 간격(stride)로 순회하며 채널 별로 합성곱을 수행하고 모든 채널(ex, RGB 3개)의 합성곱 결과를 더하여 Feature(=Activation) Map을 생성한다.     
 (MxM 이미지, no padding)필터의 개수 = Activation maps의 개수, size=1+(M-kernel_size)/stride, Activation map = (size,size,필터개수)     
