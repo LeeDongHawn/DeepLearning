@@ -72,6 +72,12 @@
 ```
 CNN Model   
 1) 구조   
-- ㅇ
+- 1[Conv + ReLu] * N(0<=N<=3)   
+- 2[Pooling] * M(M>=0)   
+- (1 2), (1 2) 여러 번 반복 수행 가능   
+- 3[FC + ReLu] * K(0<=K<=2)   
+2) layer  
+- Conv2D   
+: input_shape = (width, height, channel)
 ```
 
