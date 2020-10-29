@@ -75,7 +75,9 @@ CNN Model
 - 1[Conv + ReLu] * N(0<=N<=3)   
 - 2[Pooling] * M(M>=0)   
 - (1 2), (1 2) 여러 번 반복 수행 가능   
+(Flatten)    
 - 3[FC + ReLu] * K(0<=K<=2)   
+(마지막 : Softmax)   
 2) layer  
 - Conv2D   
 : input_shape = (height, width, channel), activation = 'None', kernel_initializer="glorot_uniform", data_format=None(input_shape 순서 설정)      
@@ -83,7 +85,12 @@ CNN Model
 (MxM 이미지, no padding)필터의 개수 = Activation maps의 개수, size=1+(M-kernel_size)/stride, Activation map = (size,size,필터개수)     
 : stride=(1,1), stride : 지정한 간격으로 필터를 움직이며 합성곱을 수행   
 : padding="valid/same", padding : 입력과 동일한 높이와 너비를 가진 특징 맵을 얻기위한 방법(외각에 0으로 데이터 채움)   
-- Po
+- (Max/Average/GlobalMax/GlobalAverage)Pooling2D   
+용도 : Activation Map 크기를 줄이거나 특정 데이터 강조하기 위함, pool_size만큼 stride간격으로 순회   
+: MaxPooling = pool_size에 있는 가장 큰 값으로 새로운 Activation Map을 생성   
+: AveragePooling = pool_size에 있는 값의 평균으로 새로운 Activation Map을 생성   
+: GlobalMaxPooling = Activation Map 전체에서 가장 큰 값 1개만 추출함   
+- Fully Connected layer
 ```
 
 
