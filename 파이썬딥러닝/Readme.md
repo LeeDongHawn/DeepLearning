@@ -78,6 +78,11 @@ CNN Model
 - 3[FC + ReLu] * K(0<=K<=2)   
 2) layer  
 - Conv2D   
-: input_shape = (width, height, channel)
+: input_shape = (width, height, channel), activation = 'None', kernel_initializer="glorot_uniform", data_format=None(input_shape 순서 설정)      
+: filters = ㅁ, 필터의 의미 : CNN에서 필터는 커널과 같은 의미로, 일반적으로 nxn 정사각행렬로 정의된다.   
+입력 데이터를 지정된 간격(stride)로 순회하며 채널 별로 합성곱을 수행하고 모든 채널(ex, RGB 3개)의 합성곱 결과를 더하여 Feature Map을 생성한다.(1개)      
+: stride=(1,1), stride : 지정한 간격으로 필터를 움직이며 합성곱을 수행   
+: 
 ```
+
 
