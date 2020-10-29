@@ -67,8 +67,7 @@
 > fit() : 모델 훈련(x_train,y_train), predict() : 입력에 대한 출력값(x_test), evaluate(x_test,y_test) : 테스트 데이터를 통해 정확도 평가    
 >> 1) MNIST_1~5 : Using DNN(Not CNN) 
 >>> 1 : Only 1 layer, 2 : More than 2 layer, 3 : Initializer 설정, 4 : Deep and Wide, 5 : Dropout   
->> 2) MNIST_6 : Using CNN   
->> 3) MNIST_LeNet : Using LeNet   
+>> 2) MNIST_6 : Using CNN     
 ```
 CNN Model   
 1) 구조   
