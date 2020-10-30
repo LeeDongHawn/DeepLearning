@@ -103,10 +103,16 @@ CNN Model
    
 ```    
 CNN 관련 기법들(업데이트 예정)      
-1) Train, Test, Validation and K-fold   
-2) ImageDataGenerator - 데이터 증강기법   
-3) Ensemble   
-4) Pre-Trained Model
+1) Train, Test, Validation split        
+2) K-fold         
+3) ImageDataGenerator  
+용도 :  데이터 증강기법    
+4) ReduceLROnPlateau      
+5) EarlyStopping      
+6) ModelCheckpoint       
+7) Ensemble      
+8) Pre-Trained Model     
+    
 등등 ..
 [MNIST ImageDataGenerator]
 
