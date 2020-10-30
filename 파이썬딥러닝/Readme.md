@@ -99,6 +99,10 @@ CNN Model
    
 3) 유명한 CNN   
 - LeNet-5(1998), AlexNet(2012), ZFNet(2013), VGG(2014), GoogLeNet(=Inception, 2014), ResNet(2015)      
+```    
+   
+```    
+CNN 관련 기법들   
+1) ImageDataGenerator   
+   
 ```
-
-
