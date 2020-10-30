@@ -103,8 +103,19 @@ CNN Model
    
 ```    
 CNN 관련 기법들(업데이트 예정)      
-1) Train, Test, Validation split        
+1) Train, Test, Validation split   
+용도 : Train|Test 로만 나누면 overfitting 발생 가능 -> Train|Validation|Test로 데이터 분리   
+   
 2) K-fold         
+용도 : overfitting 방지   
+: 현재 상태 - Train|Test   
+: k지정(ex, k=3) Train = Train(2/3)|Validation(1/3)으로 나뉨(ㅁ : Train, O : Validation)     
+: 1회차 - ㅁ ㅁ O 로 나눠 학습과 성능 측정   
+: 2회차 - ㅁ O ㅁ 로 나눠 학습과 성능 측정   
+: 3회차 - O ㅁ ㅁ 로 나눠 학습과 성능 측정   
+: 1,2,3회차 결과에 대한 평균 Hyperparameters을 최종적으로 Train Data에 적용   
+: 마지막으로 Test Data에 대해 평가   
+   
 3) ImageDataGenerator  
 용도 :  데이터 증강기법    
 4) ReduceLROnPlateau      
