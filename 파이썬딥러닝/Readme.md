@@ -103,6 +103,12 @@ CNN Model
    
 ```    
 CNN 관련 기법들   
-1) ImageDataGenerator   
+1) ImageDataGenerator - 데이터 증강기법   
+[
+1. train_datagen = ImageDataGenerator(데이터 증강 조건 및 validation 비율 설정(rescale, shear_range, zoom_range, horizontal_flip, validation_split ...))   
+2. train_generator = train_datagen.flow_from_directory(데이터 증강 수행(data directory, target_size, batch_size, class_mode, subset ...))    
+3. validation_generator = train_datagen.flow_from_directory(데이터 증강 수행(data directory, target_size, batch_size, class_mode, subset ...))   
+4. model.fit_generator(모델 학습 수행(train_generator, steps_per_epoch, validation_data, validation_steps, epochs ...))   
    
+
 ```
