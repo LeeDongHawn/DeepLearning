@@ -98,6 +98,7 @@ CNN Model
 : ReLu + Drop out + Softmax 등으로 구성   
    
 3) 유명한 CNN   
+[ImageNet] 학습   
 - LeNet-5(1998), AlexNet(2012), ZFNet(2013), VGG(2014), GoogLeNet(=Inception, 2014), ResNet(2015)      
 ```    
    
