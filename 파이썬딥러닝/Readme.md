@@ -98,7 +98,7 @@ CNN Model
 : ReLu + Drop out + Softmax 등으로 구성   
    
 3) 유명한 CNN   
-[ImageNet] 학습한 모델, 이 모델을 그대로 불러와 사용하는 것을 사전학습모델을 사용한다고 한다.   
+[ImageNet] 학습한 모델, 이 모델을 그대로 불러와 사용하는 것을 사전학습모델(Pre-Trained Model)을 사용한다고 한다.   
 하지만, ImageNet에 존재하지 않는 사진들을 분류하고 싶을 때는 어떻게 해야할까?   
 사전학습 모델을 약간 수정하여 사용한다.(처음부터 가중치 학습하는 것보다 정확도, 속도 향상 가능) 이를 전이학습이라고 한다.    
 (ex, Fully connected layer 수정)   
@@ -122,12 +122,14 @@ CNN 관련 기법들(업데이트 예정)
    
 3) ImageDataGenerator  
 용도 :  데이터 증강기법    
+
+3-1) flow_from_directory
+
 4) ReduceLROnPlateau      
 5) EarlyStopping      
 6) ModelCheckpoint       
 7) Ensemble      
-8) Pre-Trained Model     
-    
+
 등등 ..
 [MNIST ImageDataGenerator]
 
