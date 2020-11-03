@@ -127,12 +127,19 @@ CNN 관련 기법들(업데이트 예정)
 
 3-1) flow_from_directory
 
-4) ReduceLROnPlateau      
-5) EarlyStopping      
+4) ReduceLROnPlateau(callbacks)      
+용도 : loss가 향상되지 않을 때 learning rate를 조정함(factor, patience, verbose)       
+-> 사용법 : MNIST_Fashion_02   
+
+5) EarlyStopping(callbacks)         
+용도 : Epoch을 많이 돌리며, 특정 시점에서 멈추기 위해 사용(patience, verbose)           
+https://3months.tistory.com/424   
+-> 사용법 : MNIST_Fashion_02   
    
-6) ModelCheckpoint       
+6) ModelCheckpoint(callbacks)          
 용도 : 가장 높은 검증 정확도의 모델 저장하기위해 사용   
 -> 사용법 : MNIST_Fashion_02   
+
 7) Ensemble      
 
 등등 ..
