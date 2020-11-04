@@ -15,3 +15,12 @@
   - ANN(생체 신경망 구조와 유사) - 입력, 은닉, 출력 계층으로 구성되며 각 계층은 여러 노드로 구성됨
   - 높은 성능을 위한 많은 데이터 수집, 충분히 큰 신경망(많은 은닉 유닛) 훈련 가능
   - 신경망 속도 향상을 위한 알고리즘(시그모이드, ReLU 등) 
+
+
+* 이미지 파일 나누는 방법
+1. keras 데이터셋 (Xtrain,Ytrain,Xtest,Ytest)   
+-> MNIST_FASHION_02   
+2. .csv파일(train/test, 픽셀값이 1row마다 있는 경우)   
+-> DACON_MNIST_01   
+3. .zip파일(카테고리,img.jpg ...)   
+-> CALTECH101    
