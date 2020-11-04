@@ -24,3 +24,5 @@
 -> DACON_MNIST_01.ipynb   
 3. .zip파일(카테고리,img.jpg ...)   
 -> CALTECH101.ipynb    
+4. train안에 cat, dog 이미지만 존재할 경우(train,test,validation 파일로 분리방법)      
+-> KAGGLE_CatDog_01.ipynb   
