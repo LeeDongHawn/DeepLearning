@@ -158,5 +158,6 @@ save_best_only : 이전보다 향상된 모델 가중치 저장(가중치 load�
 
 ```
    
-- 7PyImageSearchDeepLearning    
-7.1) keras-conv2d-example(CALTECH101, zipData classification)   
+- 7 - PyImageSearchDeepLearning      
+7.1) keras-conv2d-example    
+(CALTECH101, zipData classification) classification_report, confusion_matrix 사용법   
