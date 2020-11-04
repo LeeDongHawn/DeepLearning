@@ -18,7 +18,7 @@
 
 
 # 이미지 파일 나누는 방법
-1. keras 데이터셋 (Xtrain,Ytrain,Xtest,Ytest)   
+1. keras dataset load(Xtrain,Ytrain,Xtest,Ytest)   
 -> MNIST_FASHION_02.ipynb   
 2. .csv파일(train/test, 픽셀값이 1row마다 있는 경우)   
 -> DACON_MNIST_01.ipynb   
