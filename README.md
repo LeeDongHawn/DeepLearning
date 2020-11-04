@@ -17,10 +17,10 @@
   - 신경망 속도 향상을 위한 알고리즘(시그모이드, ReLU 등) 
 
 
-* 이미지 파일 나누는 방법
+# 이미지 파일 나누는 방법
 1. keras 데이터셋 (Xtrain,Ytrain,Xtest,Ytest)   
--> MNIST_FASHION_02   
+-> MNIST_FASHION_02.ipynb   
 2. .csv파일(train/test, 픽셀값이 1row마다 있는 경우)   
--> DACON_MNIST_01   
+-> DACON_MNIST_01.ipynb   
 3. .zip파일(카테고리,img.jpg ...)   
--> CALTECH101    
+-> CALTECH101.ipynb    
