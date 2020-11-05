@@ -123,7 +123,8 @@ CNN 관련 기법들(업데이트 예정)
 : 3회차 - O ㅁ ㅁ 로 나눠 학습과 성능 측정   
 : 1,2,3회차 결과에 대한 평균 Hyperparameters을 최종적으로 Train Data에 적용   
 : 마지막으로 Test Data에 대해 평가   
-   
+-> 사용법 : DACON_MNIST_03
+
 3) ImageDataGenerator  
 용도 :  데이터 증강기법    
 
