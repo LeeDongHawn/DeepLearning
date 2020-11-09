@@ -30,3 +30,6 @@
 pandas dataframe 형태로 만듦 dataframe으로부터 train, validation 분리한 다음,      
 test 데이터 검증 수행(전체 데이터 활용하기 때문에 시간 굉장히 오래걸림, 방법만 참조)      
 -> KAGGLE_CatDog_02.ipynb    
+6. Pre-Trained Model   
+따로 학습과정 없이, 예측하고자 하는 이미지만 읽어서 바로 예측 실행   
+-> KAGGLE_CatDog_PreTrained.ipynb   
