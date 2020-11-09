@@ -73,6 +73,7 @@
 CNN Model   
 1) 구조   
 - 1[Conv + ReLu] * N(0<=N<=3)   
+(BatchNormalization()) : 학습 안정, 정확도 향상위해 사용   
 - 2[Pooling] * M(M>=0)   
 - (1 2), (1 2) 여러 번 반복 수행 가능   
 (Flatten): 데이터의 Shape만 변경해주는 계층      
