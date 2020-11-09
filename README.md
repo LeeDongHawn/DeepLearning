@@ -36,4 +36,4 @@ test 데이터 검증 수행(전체 데이터 활용하기 때문에 시간 굉�
 7. Pre-Trained Model + Transfer Learning  
 (IMAGENET에 속하지 않는 이미지 class에 대하여) VGG16모델 구조를 FC layer만 변경, yes or no 판별   
 데이터셋 구조 : train(절/신사), validation(절/신사), test(절+신사 섞임)   
--> 
+-> Transfer_Learning.
