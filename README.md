@@ -33,6 +33,7 @@ test 데이터 검증 수행(전체 데이터 활용하기 때문에 시간 굉�
 6. Pre-Trained Model   
 따로 학습과정 없이, 예측(IMAGENET에 있는 class)하고자 하는 이미지(2개)만 읽어서 바로 예측 실행   
 -> KAGGLE_CatDog_PreTrained.ipynb   
-7. Pre-Trained Model + Transfer Learning   
-
+7. Pre-Trained Model + Transfer Learning  
+(IMAGENET에 속하지 않는 이미지 class에 대하여) VGG16모델 구조를 FC layer만 변경, yes or no 판별   
+데이터셋 구조 : train(절/신사), validation(절/신사), test(절+신사 섞임)   
 -> 
