@@ -58,17 +58,12 @@
   - 높은 성능을 위한 많은 데이터 수집, 충분히 큰 신경망(많은 은닉 유닛) 훈련 가능
   - 신경망 속도 향상을 위한 알고리즘(시그모이드, ReLU 등) 
   ```       
-  tf, keras, torch   
+  tf, keras, torch 설명, 왜 GPU쓰는지   좋은 이유가 뭔지?      
   + 학습 중인데 GPU를 100% 사용하지 않고 있다. 이유는?    
 + GPU를 두개 다 쓰고 싶다. 방법은?   
 + 학습시 필요한 GPU 메모리는 어떻게 계산하는가?   
- [train,test,val / activation / loss / ... ]
-  요즘 Sigmoid 보다 ReLU를 많이 쓰는데 그 이유는?   
-  + ReLU의 문제점은?   
-+ Bias는 왜 있는걸까?   
-
+ -> 나머지 내용들은 '파이썬딥러닝' 참조    
   ```
-
 
 # 이미지 파일 나누는 방법
 1. keras dataset load(Xtrain,Ytrain,Xtest,Ytest)   
