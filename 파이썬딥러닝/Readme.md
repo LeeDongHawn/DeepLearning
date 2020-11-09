@@ -114,7 +114,6 @@ CNN 관련 기법들(업데이트 예정)
 -> 사용법 : MNIST_Fashion02 : (x_train, y_train, x_test, y_test)로 나눠진 데이터셋(load_dataset으로 불러옴)   
 -> 사용법 : DACON_MNIST : .csv 파일(train/test), 이미지마다 픽셀이 1 row에 나열되어 있음   
 
-
 2) K-fold         
 용도 : overfitting 방지   
 : 현재 상태 - Train|Test   
@@ -128,7 +127,8 @@ CNN 관련 기법들(업데이트 예정)
 
 3) ImageDataGenerator  
 용도 :  데이터 증강기법     
-idg_train = ImageDataGenerator()   
+idg_train = ImageDataGenerator() 
+rescale = 1/255. (입력값 0~1 변환)   
 3-1) flow_from_directory   
 용도 : 데이터 읽기 위한 iterator   
 img_itr_train = idg_train.flow_from_directory()    
