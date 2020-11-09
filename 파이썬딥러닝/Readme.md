@@ -126,9 +126,13 @@ CNN 관련 기법들(업데이트 예정)
 -> 사용법 : DACON_MNIST_03
 
 3) ImageDataGenerator  
-용도 :  데이터 증강기법    
-
-3-1) flow_from_directory
+용도 :  데이터 증강기법     
+idg_train = ImageDataGenerator()   
+3-1) flow_from_directory   
+용도 : 데이터 읽기 위한 iterator   
+img_itr_train = idg_train.flow_from_directory()   
+학습 : history = model.fit_generator()   
+-> 사용법 : Pre
 
 4) ReduceLROnPlateau(callbacks)      
 용도 : loss가 향상되지 않을 때 learning rate를 조정함(monitor, factor, patience, verbose)      
