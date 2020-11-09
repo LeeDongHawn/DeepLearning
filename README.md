@@ -4,11 +4,11 @@
   - 강 인공지능 : 사람과 같은 사고가 가능(인간을 대체할 수준, 이성적 판단)         
   
 # [2] 머신러닝(인공지능을 위한 방법)   
-  - 지도학습 : 정답을 알려주며 학습시키는 것(input data, labeling)
-    Regression(회귀) : 어떤 데이터들의 특징을 통해 값 예측(동네 평수 가격) 
-  Linear(Multi) Regression - x와 y(1:1, n:1), Logistic        
-    Classification(분류) : 이진 분류(0 or 1), 다중 분류(개,고양이,토끼..) 
-  서포트 벡터 머신(SVM), k-nn, 의사결정 트리, 랜덤 포레스트, 인공신경망(ANN)
+  - 지도학습 : 정답을 알려주며 학습시키는 것(input data, labeling)     
+    Regression(회귀) : 어떤 데이터들의 특징을 통해 값 예측(동네 평수 가격)      
+      Linear(Multi) Regression - x와 y(1:1, n:1), Logistic           
+    Classification(분류) : 이진 분류(0 or 1), 다중 분류(개,고양이,토끼..)    
+      서포트 벡터 머신(SVM), k-nn, 의사결정 트리, 랜덤 포레스트, 인공신경망(ANN)    
   - 비지도학습 : 정답을 따로 알려주지 않고, 비슷한 데이터들을 군집화 하는 것   
   * Clustering : 
   * PCA(Principal Component Analysis) : 
