@@ -81,8 +81,7 @@
   모형(model) 병렬성 : 모델을 여러 부분으로 나누어 각각 서로 다른 GPU에 배정하는 기법을 말합니다.      
   https://kakaobrain.com/blog/66   
   자료(data) 병렬성 : DataParallel은 당신의 데이터를 자동으로 분할하고 여러 GPU에 있는 다수의 모델에 작업을 지시합니다.   
-  https://tutorials.pytorch.kr/beginner/blitz/data_parallel_tutorial.html    
-  + 학습시 필요한 GPU 메모리는 어떻게 계산하는가?   
+  https://tutorials.pytorch.kr/beginner/blitz/data_parallel_tutorial.html      
  -> 나머지 내용들은 '파이썬딥러닝' 참조    
   ```
 
