@@ -90,10 +90,9 @@ b의 역할을 베타가 완벽히 대신 할 수 있기 때문에 b 를 삭제�
 -> Dropout 대체하는 기법임   
 - 2[Pooling] * M(M>=0)   
 - (1 2), (1 2) 여러 번 반복 수행 가능   
-(Flatten): 데이터의 Shape만 변경해주는 계층      
++ Flatten() or GlobalAveragePooling() 
 - 3[FC + ReLu] * K(0<=K<=2)   
 (마지막 : Softmax) 
-
    
 2) layer  
 - Conv2D layer    
@@ -117,7 +116,7 @@ Pooling 연산은 Activation Map의 개수(filter 개수)를 줄이지 않는다
 - Fully Connected layer    
 용도 : 추출된 특징 값을 Neural Network에 넣어서 최종 분류까지 수행   
 : Flatten() or GlobalAveragePooling()   
--> Flatten()은 파라미터 개수 증가, 계산오래걸림    
+-> Flatten()은 파라미터 개수 증가, 계산오래걸림, 데이터의 Shape만 변경해주는 계층    
 -> GAP()는 파라미터 개수 감소, 계산시간단축   
 : ReLu + Drop_out + Softmax 등으로 구성(3개 이상 사용하지 않는 것이 좋음)      
    
