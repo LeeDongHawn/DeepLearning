@@ -110,7 +110,9 @@ Pooling 연산은 Activation Map의 개수(filter 개수)를 줄이지 않는다
    
 3) 유명한 CNN Model   
 [ImageNet] 학습한 모델, 이 모델을 그대로 불러와 사용하는 것을 사전학습모델(Pre-Trained Model)을 사용한다고 한다.   
-하지만, ImageNet에 존재하지 않는 사진들을 분류하고 싶을 때는 어떻게 해야할까?   
+-> 앞쪽 층의 필터들은 윤곽선같은 저수준 특징들을 담은 특징 맵을 산출하고,   
+뒤쪽 층의 필터들은 좀 더 복잡한 ex)눈, 귀 특징을 생성한다.   
+ImageNet에 존재하지 않는 사진들을 분류하고 싶을 때는 어떻게 해야할까?   
 사전학습 모델을 약간 수정하여 사용한다.(처음부터 가중치 학습하는 것보다 정확도, 속도 향상 가능) 이를 전이학습이라고 한다.    
 (ex, Fully connected layer 수정)   
 - LeNet-5(1998), AlexNet(2012), ZFNet(2013), VGG(2014), GoogLeNet(=Inception, 2014), ResNet(2015)      
