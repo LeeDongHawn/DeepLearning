@@ -79,6 +79,7 @@ CNN Model
 (Flatten): 데이터의 Shape만 변경해주는 계층      
 - 3[FC + ReLu] * K(0<=K<=2)   
 (마지막 : Softmax) 
+- BatchNormalization()   
    
 2) layer  
 - Conv2D layer    
@@ -89,19 +90,22 @@ CNN Model
 : stride=(1,1), stride : 지정한 간격으로 필터를 움직이며 합성곱을 수행   
 : padding="valid/same", padding : 입력과 동일한 높이와 너비를 가진 특징 맵을 얻기위한 방법(외각에 0으로 데이터 채움)   
 : ReLU - 속도와 정확도 면에서 성능이 뛰어남  
--> 학습 파라미터 : (input_channel x filter_size x output_channel(=filter개수))   
-ex) Conv2D
-
+-> 파라미터 : (input_channel x filter_size(k*k) x output_channel(=filter개수)) + output bias(=filter 개수)     
+   
 - (Max/Average/GlobalMax/GlobalAverage)Pooling2D layer   
 용도 : Activation Map 크기를 줄이거나 특정 데이터 강조하기 위함, pool_size만큼 stride간격으로 순회   
 Pooling 연산은 Activation Map의 개수(filter 개수)를 줄이지 않는다.(크기만 줄여줌)       
 : MaxPooling = pool_size에 있는 가장 큰 값으로 새로운 Activation Map을 생성   
 : AveragePooling = pool_size에 있는 값의 평균으로 새로운 Activation Map을 생성   
 : GlobalMaxPooling = Activation Map 전체에서 가장 큰 값 1개만 추출함   
+: Pooling다음 Drop_out 놓기도 함   
    
 - Fully Connected layer    
 용도 : 추출된 특징 값을 Neural Network에 넣어서 최종 분류까지 수행   
-: ReLu + Drop out + Softmax 등으로 구성   
+: Flatten() or GlobalAveragePooling()   
+-> Flatten()은 파라미터 개수 증가, 계산오래걸림    
+-> GAP()는 파라미터 개수 감소, 계산시간단축   
+: ReLu + Drop_out + Softmax 등으로 구성(3개 이상 사용하지 않는 것이 좋음)      
    
 3) 유명한 CNN Model   
 [ImageNet] 학습한 모델, 이 모델을 그대로 불러와 사용하는 것을 사전학습모델(Pre-Trained Model)을 사용한다고 한다.   
