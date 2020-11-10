@@ -72,9 +72,17 @@
    dynamic graph : 반복할 때마다 새로운 조건으로 graph 수정 가능함    
   - 테아노(Theano) : 최초의 딥러닝 프레임워크, 현재 개발 및 지원 중단   
   - Why GPU? 좋은 이유가 뭔지?      
+  GPU는 여러 명령을 동시처리하는 SIMT(Single Instruction Multiple Data)구조로 되어있다.   
+  GPU는 많은 행렬 곱셈을 병렬화하여 동시에 연산을 수행할 수 있도록 한다.   
   + 학습 중인데 GPU를 100% 사용하지 않고 있다. 이유는?    
-+ GPU를 두개 다 쓰고 싶다. 방법은?   
-+ 학습시 필요한 GPU 메모리는 어떻게 계산하는가?   
+  GPU는 CPU로부터 작업을 할당받는데, CPU가 GPU 처리속도를 따라가지 못하는 경우가 발생함    
+  + GPU를 두개 다 쓰고 싶다. 방법은? 필요한 작업을 분산한다.     
+  초매개변수(hyperparameter) 병렬성 : 신경망의 서로 다른 매개변수들을 서로 다른 프로세서에서 훈련한다.   
+  모형(model) 병렬성 : 모델을 여러 부분으로 나누어 각각 서로 다른 GPU에 배정하는 기법을 말합니다.      
+  https://kakaobrain.com/blog/66   
+  자료(data) 병렬성 : DataParallel은 당신의 데이터를 자동으로 분할하고 여러 GPU에 있는 다수의 모델에 작업을 지시합니다.   
+  https://tutorials.pytorch.kr/beginner/blitz/data_parallel_tutorial.html    
+  + 학습시 필요한 GPU 메모리는 어떻게 계산하는가?   
  -> 나머지 내용들은 '파이썬딥러닝' 참조    
   ```
 
