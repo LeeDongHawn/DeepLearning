@@ -88,7 +88,9 @@ CNN Model
 (input 이미지 : MxM, no padding)필터의 개수 = Activation maps의 개수, output_size=1+(M-kernel_size)/stride, Activation map = (size,size,필터개수)     
 : stride=(1,1), stride : 지정한 간격으로 필터를 움직이며 합성곱을 수행   
 : padding="valid/same", padding : 입력과 동일한 높이와 너비를 가진 특징 맵을 얻기위한 방법(외각에 0으로 데이터 채움)   
-: ReLU - 속도와 정확도 면에서 성능이 뛰어남   
+: ReLU - 속도와 정확도 면에서 성능이 뛰어남  
+-> 학습 파라미터 : (input_channel x filter_size x output_channel(=filter개수))   
+ex) Conv2D
 
 - (Max/Average/GlobalMax/GlobalAverage)Pooling2D layer   
 용도 : Activation Map 크기를 줄이거나 특정 데이터 강조하기 위함, pool_size만큼 stride간격으로 순회   
