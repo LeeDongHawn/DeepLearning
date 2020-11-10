@@ -85,12 +85,14 @@ CNN Model
 용도 : 이미지에서 특징을 추출(Activation Map)하기 위함   
 : input_shape = (height, width, channel), activation = 'None', kernel_initializer="glorot_uniform", data_format=None(input_shape 순서 설정)      
 : filters = 개수, 입력 데이터를 지정된 간격(stride)로 순회하며 채널 별로 합성곱을 수행하고 모든 채널(ex, RGB 3개)의 합성곱 결과를 더하여 Feature(=Activation) Map을 생성한다.     
-(MxM 이미지, no padding)필터의 개수 = Activation maps의 개수, size=1+(M-kernel_size)/stride, Activation map = (size,size,필터개수)     
+(input 이미지 : MxM, no padding)필터의 개수 = Activation maps의 개수, output_size=1+(M-kernel_size)/stride, Activation map = (size,size,필터개수)     
 : stride=(1,1), stride : 지정한 간격으로 필터를 움직이며 합성곱을 수행   
 : padding="valid/same", padding : 입력과 동일한 높이와 너비를 가진 특징 맵을 얻기위한 방법(외각에 0으로 데이터 채움)   
-   
+: ReLU - 속도와 정확도 면에서 성능이 뛰어남   
+
 - (Max/Average/GlobalMax/GlobalAverage)Pooling2D layer   
 용도 : Activation Map 크기를 줄이거나 특정 데이터 강조하기 위함, pool_size만큼 stride간격으로 순회   
+Pooling 연산은 Activation Map의 개수(filter 개수)를 줄이지 않는다.(크기만 줄여줌)       
 : MaxPooling = pool_size에 있는 가장 큰 값으로 새로운 Activation Map을 생성   
 : AveragePooling = pool_size에 있는 값의 평균으로 새로운 Activation Map을 생성   
 : GlobalMaxPooling = Activation Map 전체에서 가장 큰 값 1개만 추출함   
@@ -99,7 +101,7 @@ CNN Model
 용도 : 추출된 특징 값을 Neural Network에 넣어서 최종 분류까지 수행   
 : ReLu + Drop out + Softmax 등으로 구성   
    
-3) 유명한 CNN   
+3) 유명한 CNN Model   
 [ImageNet] 학습한 모델, 이 모델을 그대로 불러와 사용하는 것을 사전학습모델(Pre-Trained Model)을 사용한다고 한다.   
 하지만, ImageNet에 존재하지 않는 사진들을 분류하고 싶을 때는 어떻게 해야할까?   
 사전학습 모델을 약간 수정하여 사용한다.(처음부터 가중치 학습하는 것보다 정확도, 속도 향상 가능) 이를 전이학습이라고 한다.    
