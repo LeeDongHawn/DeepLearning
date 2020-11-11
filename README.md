@@ -39,16 +39,17 @@
   모델이란? 데이터들의 패턴을 대표할 수 있는 함수   
   residual(잔차) = 실제 관측값 - 표본집단의 회귀식에서 예측된 값  
   error(오차) = 실제 관측값 - 모집단의 회귀식에서 예측된 값   
-  최소자승법(Least Square Method) : 모델의 파라미터를 구하기 위한 방법, residual의 제곱을 최소화    
-  [최적화기법]
+  최소자승법(Least Square Method) : 모델의 파라미터를 구하기 위한 방법, residual의 제곱을 최소화   
+  linear : 미지수의 최고차항의 차수가 1을 넘지 않는 다항 방정식    
+  [최적화기법] - non linear
   cost,loss,error을 최소화하고, score,이윤을 최대화하는 파라미터를 찾는 문제   
   Gradient란? 다변수 함수 f를 각 변수로 편미분한 값으로 구성되는 벡터 f(x,y)=x^2+y^2 -> gradient=(2x,2y)      
-  + 왜 꼭 Gradient를 써야 할까?    
-  + 그 그래프에서 가로축과 세로축 각각은 무엇인가?    
-  + 실제 상황에서는 그 그래프가 어떻게 그려질까?    
-  + GD 중에 때때로 Loss가 증가하는 이유는?   
-  + 중학생이 이해할 수 있게 더 쉽게 설명 한다면?   
-  + Back Propagation에 대해서 쉽게 설명 한다면?    
+  gradient descent 방법은 steepest descent 방법이라고도 불리는데,   
+  함수 값이 낮아지는 방향으로 독립 변수 값을 변형시켜가면서 최종적으로는 최소 함수 값을 갖도록 하는 독립 변수 값을 찾는 방법이다.    
+  (앞이 보이지 않는 안개가 낀 산을 내려올 때 모든 방향으로 산을 더듬어가며 산의 높이가 가장 낮아지는 방향으로 진행한다.)   
+  (일차미분을 통한 최적화, 이차미분을 통한 최적화)    
+  [최적화기법] - linear(목적 함수가 ∑ 에러^2 의 형태인 경우)      
+  SGD(Stochastic Gradient Descent), Momentum, Adagrad 등(-> optimizer)   
   ```
   - Shallow learning(입력과 출력층만 존재)
 
