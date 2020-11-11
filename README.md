@@ -88,21 +88,21 @@
 
 # 이미지 파일 나누는 방법
 1. keras dataset load(Xtrain,Ytrain,Xtest,Ytest)   
--> MNIST_FASHION_02.ipynb   
+-> MNIST_FASHION_02.ipynb   input_shape = (28x28x1)     
 2. .csv파일(train/test, 픽셀값이 1ROW마다 존재하는 경우)   
--> DACON_MNIST_01.ipynb   
+-> DACON_MNIST_01.ipynb  input_shape = (28x28x1)         
 3. .zip파일(|카테고리,img.jpg| 반복 ...)   
--> CALTECH101.ipynb    
+-> CALTECH101.ipynb   input_shape = (96x96x3)    
 4. train안에 cat, dog 이미지만 존재할 경우(train,test,validation 파일로 이미지 분리, 제출용아님)      
--> KAGGLE_CatDog_01.ipynb   
+-> KAGGLE_CatDog_01.ipynb   input_shape = (128x128x3)   
 5. (4번과 동일 데이터셋) 폴더 안 이미지 이름에 따라 카테고리 분류(이미지명.jpg, 카테고리) 후       
 pandas dataframe 형태로 만듦 dataframe으로부터 train, validation 분리한 다음,      
 test 데이터 검증 수행(전체 데이터 활용하기 때문에 시간 굉장히 오래걸림, 방법만 참조)      
--> KAGGLE_CatDog_02.ipynb    
+-> KAGGLE_CatDog_02.ipynb    input_shape = (128x128x3)   
 6. Pre-Trained Model   
 따로 학습과정 없이, 예측(IMAGENET에 있는 class)하고자 하는 이미지(2개)만 읽어서 바로 예측 실행   
--> KAGGLE_CatDog_PreTrained.ipynb   
+-> KAGGLE_CatDog_PreTrained.ipynb   input_shape = (224x224x3)   
 7. Pre-Trained Model + Transfer Learning  
 (IMAGENET에 속하지 않는 이미지 class에 대하여) VGG16모델 구조를 FC layer만 변경, yes or no 판별   
 데이터셋 구조 : train(절/신사), validation(절/신사), test(절+신사 섞임)   
--> Transfer_Learning.ipynb, utils.py   
+-> Transfer_Learning.ipynb, utils.py    input_shape = (224x224x3)   
