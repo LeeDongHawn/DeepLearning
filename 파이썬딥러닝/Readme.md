@@ -135,8 +135,9 @@ CNN 관련 기법들(업데이트 예정)
 -> 사용법 : MNIST_Fashion02 : (x_train, y_train, x_test, y_test)로 나눠진 데이터셋(load_dataset으로 불러옴)   
 -> 사용법 : DACON_MNIST : .csv 파일(train/test), 이미지마다 픽셀이 1 row에 나열되어 있음   
 
-2) K-fold         
+2) K-fold(sklearn의 StratifiedKFold)            
 용도 : overfitting 방지   
+overfitting : 학습 데이터셋은 정확도 높으나, 새로운 데이터 적용 시 잘 맞지 않는 것   
 : 현재 상태 - Train|Test   
 : k지정(ex, k=3) Train = Train(2/3)|Validation(1/3)으로 나뉨(ㅁ : Train, O : Validation)     
 : 1회차 - ㅁ ㅁ O 로 나눠 학습과 성능 측정   
