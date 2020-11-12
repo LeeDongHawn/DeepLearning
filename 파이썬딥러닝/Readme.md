@@ -46,8 +46,8 @@
 >>> - RMSprop : 모든 경사를 더하는 대신 지수이동평균을 사용. Non-stationary한 데이터 학습 시 주로 사용   
 >>> - Adam : Adagrad와 비슷, 0으로 편향된 것을 보정. 가장 성능이 좋다고 평가되고 있음 v   
 >> 8) loss function   
->>> - mean square error : 오차 제곱에 대해 평균을 취함 v      
->>> - binary classification : output layer sigmoid ( 0 or 1 )   
+>>> - mean_square_error : 오차 제곱에 대해 평균을 취함         
+>>> - binary_crossentropy  : output layer sigmoid ( 0 or 1 )   
 >>> - categorical_crossentropy : output layer softmax ( 2 more class )   
 >>> - sparse_categorical_crossentropy : output layer softmax ( 0 or 1 )   
 >> 9) Learning Rate 조정   
