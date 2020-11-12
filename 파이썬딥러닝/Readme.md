@@ -51,12 +51,8 @@
 >>> - categorical_crossentropy : output layer softmax ( 2 more class )   
 >>> - sparse_categorical_crossentropy : output layer softmax ( 0 or 1 )   
 >> 9) Learning Rate 조정   
->>> - 0.01 혹은 0.001 등 적절히 선택   
->> 10) Batch size     
->>> - 32 or 64 등 적절히 선택   
->> 11) Epoch   
->>> - 적절히 선택(작동 시간 고려)   
->> 12) Batch와 Epoch와 Iteration
+>>> - 0.01 혹은 0.001 등 적절히 선택    
+>> 10) Batch와 Epoch와 Iteration
 >>> - Epoch : 인공 신경망에서 전체 데이터셋에 대해 forward/backward 학습을 완료한 횟수   
 >>> - Batch : 메모리 한계와 속도 저하 때문에 모든 데이터를 한번에 집어넣을 수 없어, 데이터를 나누는 것(데이터 size)   
 >>> - Iteration : 몇 번 나누는지에 대한 횟수
