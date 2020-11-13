@@ -102,6 +102,7 @@ b의 역할을 베타가 완벽히 대신 할 수 있기 때문에 b 를 삭제�
 zero padding 사용하는 것이 영상 크기 유지와 경계면 정보를 유지할 수 있어 더 좋다.   
 : ReLU - 속도와 정확도 면에서 성능이 뛰어남  
 -> 파라미터 : (input_channel x filter_size(k*k) x output_channel(=filter개수)) + output bias(=filter 개수)     
+처음 이후 input_channel은 이전 conv의 filter 개수     
    
 - (Max/Average/GlobalMax/GlobalAverage)Pooling2D layer   
 용도 : Activation Map 크기를 줄이거나 특정 데이터 강조하기 위함, pool_size만큼 stride간격으로 순회   
