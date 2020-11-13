@@ -172,8 +172,11 @@ verbose=1 : 언제 멈췄는지 알 수 있음, monitor='val_loss' 어느 성능
 save_best_only : 이전보다 향상된 모델 가중치 저장(가중치 load해서 test에 적용)      
 -> 사용법 : MNIST_Fashion_02, DACON_MNIST_1     
 
-7) Ensemble      
-
+7) Ensemble(정확한지 모르겠음)   
+모델1(vgg16) -> 학습 -> 예측   
+모델2(google) -> 학습 -> 예측   
+모델3(resnet) -> 학습 -> 예측  
+모델1, 모델2, 모델3의 예측 결과 중에서 최빈값을 최종 예측으로 사용   
 ```
    
 - 7 - PyImageSearchDeepLearning      
