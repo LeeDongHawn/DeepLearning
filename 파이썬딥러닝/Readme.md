@@ -66,6 +66,7 @@
 >>> 1 : Only 1 layer, 2 : More than 2 layer, 3 : Initializer 설정, 4 : Deep and Wide, 5 : Dropout   
 >> 2) MNIST_6 : Using CNN(따로 기법 적용 x, 아래 구조로만 구성됨)   
 >> 3) MNIST_LeNet : Using CNN - LeNet(따로 기법 적용 x, LeNet구조 사용)   
+>> 4) MNIST_LeNet2_GAP : Flatten() 대신 GlobalAveragePooling 사용   
 ```
 CNN Model   
 1) 구조   
