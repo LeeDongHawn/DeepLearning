@@ -182,8 +182,9 @@ save_best_only : 이전보다 향상된 모델 가중치 저장(가중치 load�
 ```
    
 - 7 - PyImageSearchDeepLearning      
-7.1) keras-conv2d-example    
-(CALTECH101, zipData classification) classification_report, confusion_matrix 사용법   
+7.1) CALTECH101, Homework_CALTECH101 : classification_report, confusion_matrix 사용법    
+7.2) CALTECH101_upgrade : K-fold 사용법   
+7.3) Homework_BostonHouse : mlp와 cnn 모델 합쳐 사용하는 방법      
    
 - 8 - 전이학습   
 8.1) T_pretrained-weight, T_imagenet-vgg-res-inception-xception-keras(모델 그대로 사용)       
