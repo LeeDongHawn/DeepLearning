@@ -185,5 +185,5 @@ save_best_only : 이전보다 향상된 모델 가중치 저장(가중치 load�
 (CALTECH101, zipData classification) classification_report, confusion_matrix 사용법   
    
 - 8 - 전이학습   
-8.1) T_pretrained-weight, T_imagenet-vgg-res-inception-xception-keras : 사전에 훈련된 모델을 사용하여 통해 이미지 예측     
-8.2) 
+8.1) T_pretrained-weight, T_imagenet-vgg-res-inception-xception-keras(모델 그대로 사용)       
+8.2) Transfer_Learning, T_tutorial_transfer_learning, T_mlp_mnist(모델 수정해서 사용)    
