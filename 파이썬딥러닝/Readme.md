@@ -1,4 +1,4 @@
-[UST - 파이썬딥러닝] 김남신 교수님 강의를 듣고 정리함
+[UST - 파이썬딥러닝] 김남신 교수님 강의를 듣고 정리함(keras)   
 - Tensorflow : 2.3.0, Python : 3.7.9, Keras : 2.4.3 
 - 1LinearRegression   
 : x 1개로 y 예측   
