@@ -189,12 +189,12 @@ save_best_only : 이전보다 향상된 모델 가중치 저장(가중치 load�
 - 8 - 전이학습   
 ```   
 전략 1 : 사전학습 모델 구조만 사용하고, 내 데이터셋에 맞게 전부 새로 학습 시키는 방법   
-매우 큰 데이터셋을 가진 경우
+매우 큰 데이터셋, 유사성이 작은 데이터셋인 경우 사용   
 전략 2 : Convolution layer low level 계층(일반적인 특징 추출)은 고정시키고, high level는 다시 학습(구체적인 특징)   
-데이터셋이 작고 모델의 파라미터가 많은 경우 : Frozen   
-데이터셋이 많고 모델의 파라미터가 작은 경우 : Trained   
+데이터셋이 작고, 유사성이 작은 경우(Conv high level 거의 대부분과 FC 학습)       
+데이터셋이 많고, 유사성이 높은 경우(Conv high level 일부와 FC 학습)        
 전략 3 : Convolution layer 전체는 고정시키고, FC layer만 다시 학습시키는 방법   
-데이터셋이 비슷하거나(ex, 이미지넷), 매우 적은 경우, 하드웨어 성능이 좋지 않은 경우 사용   
+데이터셋이 비슷하지만(ex, 이미지넷), 매우 적은 경우, 하드웨어 성능이 좋지 않은 경우 사용      
 ```   
 8.1) T_pretrained-weight, T_imagenet-vgg-res-inception-xception-keras(모델 그대로 사용)       
 8.2) Transfer_Learning, T_tutorial_transfer_learning, T_mlp_mnist(모델 수정해서 사용)    
