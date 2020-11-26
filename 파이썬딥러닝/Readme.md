@@ -196,5 +196,6 @@ save_best_only : 이전보다 향상된 모델 가중치 저장(가중치 load�
 전략 3 : Convolution layer 전체는 고정시키고, FC layer만 다시 학습시키는 방법   
 데이터셋이 비슷하지만(ex, 이미지넷), 매우 적은 경우, 하드웨어 성능이 좋지 않은 경우 사용      
 ```   
-8.1) T_pretrained-weight, T_imagenet-vgg-res-inception-xception-keras(모델 그대로 사용)       
+8.1) 전략1 - T_pretrained-weight, T_imagenet-vgg-res-inception-xception-keras   
+8.2) 전략2(3) - T_st2   
 8.2) Transfer_Learning, T_tutorial_transfer_learning, T_mlp_mnist(모델 수정해서 사용)    
