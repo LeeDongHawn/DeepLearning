@@ -200,4 +200,4 @@ save_best_only : 이전보다 향상된 모델 가중치 저장(가중치 load�
 ```   
 8.1) 전략1 - T_pretrained-weight, T_imagenet-vgg-res-inception-xception-keras   
 8.2) 전략2(3) - T_st2   
-8.2) Transfer_Learning, T_tutorial_transfer_learning, T_mlp_mnist(모델 수정해서 사용)    
+8.2) Transfer_Learning, T_tutorial_transfer_learning(모델 수정해서 사용)    
