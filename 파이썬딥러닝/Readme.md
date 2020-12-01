@@ -97,6 +97,7 @@ b의 역할을 베타가 완벽히 대신 할 수 있기 때문에 b 를 삭제�
 : input_shape = (height, width, channel), activation = 'None', kernel_initializer="glorot_uniform", data_format=None(input_shape 순서 설정)      
 : filters = 개수, 입력 데이터를 지정된 간격(stride)로 순회하며 채널 별로 합성곱을 수행하고 모든 채널(ex, RGB 3개)의 합성곱 결과를 더하여 Feature(=Activation) Map을 생성한다.     
 (input 이미지 : MxM, no padding)필터의 개수 = Activation maps의 개수, output_size=1+(M-kernel_size)/stride, Activation map = (size,size,필터개수)    
+padding='same'인 경우 : size 동일(input_size), stride=1인 경우 : output_size = input_size/kernel_size      
 여러 개의 작은 크기의 필터를 사용하는 것이 좋음   
 : stride=(1,1), stride : 지정한 간격으로 필터를 움직이며 합성곱을 수행   
 : padding="valid/same", padding : 입력과 동일한 높이와 너비를 가진 특징 맵을 얻기위한 방법(외각에 0으로 데이터 채움)   
