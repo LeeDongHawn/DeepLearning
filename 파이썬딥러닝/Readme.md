@@ -35,7 +35,8 @@
 >> 5) Deep & Wide Neural Network 확장   
 >>> - Unit node 증가, layer 추가   
 >> 6) Activation Function   
->>> - Sigmoid : 주로 2개의 class 분류 시 output layer에 사용 v   
+>>> - Sigmoid : 주로 2개의 class 분류 시 
+layer에 사용 v   
 >>> - Softmax : 주로 n개의 class 분류 시 output layer에 사용   
 >>> - tanh : -1 ~ 1 사이의 값 출력, feature 값 범위 줄여주는 역할   
 >>> - ReLU : 입력 < 0 = 0, 입력 > 0 = Linear 처럼 동작, 학습 속도가 빠름 v   
@@ -96,8 +97,8 @@ b의 역할을 베타가 완벽히 대신 할 수 있기 때문에 b 를 삭제�
 용도 : 이미지에서 특징을 추출(Activation Map)하기 위함   
 : input_shape = (height, width, channel), activation = 'None', kernel_initializer="glorot_uniform", data_format=None(input_shape 순서 설정)      
 : filters = 개수, 입력 데이터를 지정된 간격(stride)로 순회하며 채널 별로 합성곱을 수행하고 모든 채널(ex, RGB 3개)의 합성곱 결과를 더하여 Feature(=Activation) Map을 생성한다.     
-(input 이미지 : MxM, no padding)필터의 개수 = Activation maps의 개수, output_size=1+(M-kernel_size)/stride, Activation map = (size,size,필터개수)    
-padding='same'인 경우 : size 동일(input_size), stride=1인 경우 : output_size = input_size/kernel_size      
+(input 이미지 : MxM, no padding)필터의 개수 = Activation maps의 개수, output_size=1+(M-kernel_size+2*Padding)/stride, Activation map = (size,size,필터개수)    
+padding='same'인 경우 : size 동일(input_size)       
 여러 개의 작은 크기의 필터를 사용하는 것이 좋음   
 : stride=(1,1), stride : 지정한 간격으로 필터를 움직이며 합성곱을 수행   
 : padding="valid/same", padding : 입력과 동일한 높이와 너비를 가진 특징 맵을 얻기위한 방법(외각에 0으로 데이터 채움)   
